@@ -1,15 +1,14 @@
 html { 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&display=swap" rel="stylesheet">
 
+}
+.center{
+    text-align: center;
+    align-content: center;
 }
 head{
     background: lightpink;
     border: 200px;
-    border
 
-font-family: 'Comfortaa', cursive;
 }
 body { 
     background: #FFFFFF;
@@ -17,14 +16,18 @@ body {
     margin: auto;
     padding: 2rem;
     background-image: url("MeyersC_BackgroundImage.jpeg");
-    background-color: white .25;
+    background-size: cover;    
 
 }
 h1 {
     text-align: center;
-    
+    font-family: 'Comfortaa', cursive;
 }
 
+h2{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
 
 }
 header {
@@ -34,35 +37,78 @@ header {
     
 }
 
-nav {
-   /* background-position: fixed;
-    border: 10px solid lightpink;
-    background-color: lightpink;*/
+ul{
+    list-style-type: none;
+    background-color: lightpink;
+    border: 2px solid black;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+li{
+
+    float: left;
+}
+li.right{
+    float: right;
+}
+
+li a {
+    color: black;
+    display:block;
     text-align: center;
-}
+    padding: 14px 16px;
+    text-decoration: none;
 
-a {
-    background: lightpink;
-    width:300px;
-    border: 1px solid black;
-    padding: 9px; 
-    text-decoration: none; 
 }
-a:hover{
-    background: lightyellow;
-    width:300px;
-    border: 1px solid black;
-    padding: 9px; 
-    text-decoration: none; 
+li a:hover:not(.active){
+    background-color: lightyellow;
 }
-a:active {
+li a.active{
     background: lightgreen;
-    width:300px;
     border: 1px solid black;
-    padding: 9px; 
-    text-decoration: none; 
+
+}
+a.portfolio{
+    background: none;
+    color: darkblue;
+    border: none;
+    padding: none;
+    text-decoration: underline;
+    font-family: 'Arvo', serif;
 }
 
+@media screen and (max-width: 800px) {
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: lightpink;
+     width: 200px;
+     align-content: center;
+}
+li{
+    float:none;
+}
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid black;
+    
+}
+
+li a:hover:not(.active) {
+    background-color: lightyellow;
+
+}
+
+li.right{
+    float:none;
+}
+}
 p{
     font-family: 'Arvo', serif;
 }
